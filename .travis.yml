@@ -1,0 +1,65 @@
+
+
+# language: node_js
+# node_js:
+#   - 7
+language: python
+
+python: "3.4"
+
+script: python hello.py
+
+
+# ///////////////////////////
+
+# install:
+#   - bundle install --path vendor/bundle
+#   - npm install
+
+#   # OR
+
+#   install: skip
+
+
+# # The default build command depends on the project language. Ruby projects use rake, the common denominator for most Ruby projects
+# script:
+# - bundle exec rake build
+# - bundle exec rake builddoc
+
+
+# # This phase is defined by using one of our continuous deployment providers to deploy code to Heroku, Amazon, or a different supported platform. The deploy steps are skipped, if the build is broken.
+# deploy:
+#   skip_cleanup: true
+
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: "YOUR ENCRYPTED API KEY"
+#   app: my-app-123
+#   on: production   
+# # OR
+#   on:
+#     all_branches: true
+
+
+
+#   # prevent Travis CI from resetting your working directory and deleting all changes made during the build
+
+
+
+#   # npm is now cached by default, in case you want to disable it, please add the following to your .travis.yml:
+
+# cache:
+#   npm: false
+
+
+
+
+# # The Job Lifecycle
+
+#   install script before_install  before_script script after_success after_failure after_script
+
+
+#   # OPTIONAL
+
+#   before_cache before_deploy  deploy after_deploy
